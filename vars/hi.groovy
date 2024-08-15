@@ -1,0 +1,3 @@
+def print() {
+  println("hi")
+}
