@@ -1,7 +1,5 @@
-def call(String name = "Alice") {
+def call(String branchName, String repoUrl, String credentials) {
     script {
-        sh """
-            echo Hi ${name}
-        """
+        git branch: "${branchName}", url: "${repoUrl}", credentialsId: "${credentials}"
     }
 }
