@@ -1,3 +1,3 @@
-def print() {
+def call() {
   println("hi")
 }
